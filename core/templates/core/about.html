@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}About me{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>About me</h1>
+<span class="subheading">Biography</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.png' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">   
+        <p>¡Hola! Mi nombre es Lucas. Me considero apasionado por la tecnología, autodidacta, proactivo y empático. El trabajo en equipo es mi principal objetivo al encarar un proyecto nuevo. Actualmente estudio la carrera de analista de sistemas, a la par y de forma autodidacta me enfocó en el desarrollo backend con Python usando el framework Django.
+Estoy completamente convencido que la única forma de lograr lo que uno se propone es practicando y dando lo mejor día tras día.</p>
+        
+    </div>
+</div>
+{% endblock %}
