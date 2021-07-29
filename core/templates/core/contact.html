@@ -6,10 +6,20 @@
 
 {% block headers %}
 <h1>Contact</h1>
-
 {% endblock %}
 
 {% block content %}
+
+{% if form.errors %}
+    <p class="alert alert-danger">Check fields with error</p>     
+{% endif %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    <p>{{ form.as_p }}</p>
+    <button class="btn btn-primary btn-block mt-3" type="submit">Send</button>
+</form>
+
 <div class="row"> 
     <div class="col-lg-8 col-md-10 mx-auto">
         <p></p>
@@ -19,4 +29,3 @@
     </div>
 </div>
 {% endblock %}
-

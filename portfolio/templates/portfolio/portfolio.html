@@ -19,7 +19,7 @@
             <div class="col-lg-7 col-md-8">
                 <h2 class="section-heading title">{{project.title}}</h2>   
                 <p>{{project.description}}</p>
-                {% if project.link %}
+                {% if project.link or project.cfuente %}
                     <p><a href="{{project.link}}">Web Page</a></p>
                     <p><a href="{{project.cfuente}}">Code in GitHub</a></p>
                 {% endif %}                    
