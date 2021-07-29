@@ -32,7 +32,7 @@ _A series of step-by-step examples that tells you what to run to get a developme
 _Clone the repository_
 
 ```
-git clone git@github.com:luckdeluxe/PortfolioWeb.git && cd PortfolioWeb
+git clone git@github.com:luckdeluxe/portfolioweb.git && cd portfolioweb
 ```
 
 _Create a virtual Python environment:_
